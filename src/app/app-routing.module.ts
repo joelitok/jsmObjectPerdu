@@ -14,7 +14,10 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'apropos', loadChildren: './apropos/apropos.module#AproposPageModule' },
+  { path: 'objetsretrouves', loadChildren: './objetsretrouves/objetsretrouves.module#ObjetsretrouvesPageModule' },
+  { path: 'objet-perdu', loadChildren: './objet-perdu/objet-perdu.module#ObjetPerduPageModule' }
 ];
 
 @NgModule({

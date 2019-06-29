@@ -1,27 +1,63 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="secondary">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      List
+    <ion-title id="hand">
+    Objets perdus
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
-      </div>
-    </ion-item>
-  </ion-list>
-  <!--
-    <div *ngIf="selectedItem" padding>
-      You navigated here from <b>{{selectedItem.title }}</b>
-    </div>
-  -->
+<ion-content padding>
+
+<ion-card-content>
+    <form  id="hand">
+     <fieldset>
+      <legend id="hand" class="id">
+          <h2> Trouvez votre objet ici... </h2>
+      </legend> 
+      <ion-list>
+          <ion-item>
+         
+            <ion-input placeholder="Nom" id="hand">
+             </ion-input>
+          </ion-item>
+        
+          <ion-item>
+           
+              <ion-input placeholder="Où avez-vous perdu l'objet" id="hand" >
+          
+              </ion-input>
+        
+            </ion-item>
+        
+            <ion-item id="hand">
+                <ion-label>Categorie</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Annuler" >
+                  <ion-select-option ><h2 id="hand" >Documents </h2></ion-select-option>
+                  <ion-select-option >Appareils</ion-select-option>
+                  <ion-select-option >Objets</ion-select-option>
+                  <ion-select-option >Autres</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                  
+                  <ion-textarea placeholder="Description" id="hand"> 
+              
+                  </ion-textarea>
+            
+                </ion-item>
+      
+         <ion-button expand="block" slot="end" color="secondary" id="hand" >
+           Recherche
+         </ion-button>
+       
+
+            </ion-list>
+     </fieldset>
+       </form> 
+
+</ion-card-content>
+
 </ion-content>

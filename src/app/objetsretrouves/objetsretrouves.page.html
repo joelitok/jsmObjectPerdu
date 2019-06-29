@@ -1,0 +1,90 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title id="hand">
+      Objets perdus
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content padding>
+
+      <ion-card-content>
+          <form  id="hand">
+           <fieldset>
+            <legend id="hand" class="id">
+                <h2> Poster l'objet retrouvés ici... </h2>
+            </legend> 
+            <ion-list>
+              <ion-item>
+                <ion-row>
+                <ion-col>
+<ion-button color="secondary" expand="full">
+    <ion-icon name="ios-camera" size="large" ></ion-icon>
+</ion-button>
+                </ion-col>
+                <ion-col>
+                </ion-col>
+                </ion-row>
+               
+              </ion-item>
+                <ion-item>
+               
+                  <ion-input placeholder="Votre nom" id="hand">
+                   </ion-input>
+                </ion-item>
+                <ion-item>
+               
+                    <ion-input placeholder="Votre contact" id="hand">
+                     </ion-input>
+                  </ion-item>
+              
+                <ion-item>
+                 
+                    <ion-input placeholder="Où avez-vous trouvé l'objet:Ville" id="hand" >
+                
+                    </ion-input>
+              
+                  </ion-item>
+                  <ion-item>
+                    <ion-datetime display-format="MM/DD/YYYY" min="1999-12-12" max="2022-12-12" placeholder="mois jours annees" ></ion-datetime>
+                    </ion-item>
+              
+                  <ion-item id="hand">
+                      <ion-label>Categorie</ion-label>
+                      <ion-select value="brown" okText="Okay" cancelText="Annuler" >
+                        <ion-select-option ><h2 id="hand" >Documents </h2></ion-select-option>
+                        <ion-select-option >Appareils</ion-select-option>
+                        <ion-select-option >Objets</ion-select-option>
+                        <ion-select-option >Autres</ion-select-option>
+                      </ion-select>
+                    </ion-item>
+                    
+                    <ion-item>
+                        <ion-label>Dépot</ion-label>
+                        <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Select One">
+                          <ion-select-option>Agence de voyage</ion-select-option>
+                          <ion-select-option>commissariats</ion-select-option>
+      
+                        </ion-select>
+                      </ion-item>
+                      <ion-item>
+                        <ion-textarea placeholder="Description" id="hand"> 
+                    
+                        </ion-textarea>
+                  
+                      </ion-item>
+            
+               <ion-button expand="block" slot="end" color="secondary" id="hand" >
+                 Recherche
+               </ion-button>
+             
+      
+                  </ion-list>
+           </fieldset>
+             </form> 
+      
+      </ion-card-content>
+      
+      </ion-content>
